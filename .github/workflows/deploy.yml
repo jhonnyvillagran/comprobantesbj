@@ -27,7 +27,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Build
+        # Esta línea es la clave: pasa el secreto de GitHub a la aplicación
         run: pnpm build
+        env:
+          VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
