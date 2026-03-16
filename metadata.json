@@ -1,0 +1,5 @@
+{
+  "name": "ComprobantesPclientes",
+  "description": "Extrae información clave de comprobantes de envío usando IA para compartir fácilmente por WhatsApp.",
+  "requestFramePermissions": []
+}
